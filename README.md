@@ -9,6 +9,12 @@ This project provides a fully automated media server setup that runs all necessa
 - **Media Management**: Includes popular tools like Plex for media streaming, qBittorrent for downloading, and Sonarr, Radarr, Overseerr, and Prowlarr for managing and organizing your media library.
 - **Dockerized Services**: All components run as Docker containers, making it easy to deploy, manage, and update.
 
+## Requirements
+
+- Docker and Docker Compose installed on your system.
+- A VPN provider compatible with Gluetun (e.g., NordVPN, PIA, etc.).
+- Basic knowledge of Docker and networking.
+
 ## Installation
 
 # 1) Download the docker-compose.yml file from the repository to your server:
@@ -19,25 +25,12 @@ This project provides a fully automated media server setup that runs all necessa
         
 - Edit the docker-compose.yml file to set up the required configurations for each service. Here are some key configurations:
 - VPN Settings: Update the Gluetun environment variables such as VPN_PROVIDER, VPN_USER, VPN_PASSWORD, and VPN_COUNTRY.
+  - For more information about all ther service providers and ways to use gluetun refer to: https://github.com/qdm12/gluetun
 - Service Settings: Customize the settings for Plex, qBittorrent, Sonarr, Radarr, Overseerr, and Prowlarr as needed.
 
 
-Run Docker Compose
-
-Start the services using Docker Compose:
-
-bash
-Copy code
-docker-compose up -d
-
-
-## Requirements
-
-- Docker and Docker Compose installed on your system.
-- A VPN provider compatible with Gluetun (e.g., NordVPN, PIA, etc.).
-    - Note: I used mullvad for my vpn go to the gluetun github page to learn how to use other VPN services: https://github.com/qdm12/gluetun
-- Basic knowledge of Docker and networking.
-
+# 3) Start the services using Docker Compose:
+        docker-compose up -d
 
 ## Usage
 

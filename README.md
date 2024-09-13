@@ -1,2 +1,2 @@
 # Media-Server-Set-Up
-Set up a media server runs through a VPN
+Set up a media server that runs through a VPN

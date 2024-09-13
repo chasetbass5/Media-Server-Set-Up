@@ -12,8 +12,7 @@ This project provides a fully automated media server setup that runs all necessa
 ## Installation
 
     1) Download the Setup File
-
-Download the docker-compose.yml file from the repository to your server:
+        Download the docker-compose.yml file from the repository to your server:
 
 bash
 Copy code

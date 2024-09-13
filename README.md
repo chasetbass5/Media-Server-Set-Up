@@ -9,6 +9,38 @@ This project provides a fully automated media server setup that runs all necessa
 - **Media Management**: Includes popular tools like Plex for media streaming, qBittorrent for downloading, and Sonarr, Radarr, Overseerr, and Prowlarr for managing and organizing your media library.
 - **Dockerized Services**: All components run as Docker containers, making it easy to deploy, manage, and update.
 
+## Installation
+
+    1) Download the Setup File
+
+Download the docker-compose.yml file from the repository to your server:
+
+bash
+Copy code
+curl -O https://raw.githubusercontent.com/your-username/media-server-docker/main/docker-compose.yml
+Edit the Configuration
+
+Open the docker-compose.yml file with a text editor and update the necessary configuration settings for your setup:
+
+bash
+Copy code
+nano docker-compose.yml
+Make sure to configure the VPN settings, service ports, and any additional settings required by your environment.
+
+Run Docker Compose
+
+Start the services using Docker Compose:
+
+bash
+Copy code
+docker-compose up -d
+Configuration
+Edit the docker-compose.yml file to set up the required configurations for each service. Here are some key configurations:
+
+VPN Settings: Update the Gluetun environment variables such as VPN_PROVIDER, VPN_USER, VPN_PASSWORD, and VPN_COUNTRY.
+
+Service Settings: Customize the settings for Plex, qBittorrent, Sonarr, Radarr, Overseerr, and Prowlarr as needed.
+
 ## Requirements
 
 - Docker and Docker Compose installed on your system.

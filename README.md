@@ -17,7 +17,7 @@ This project provides a fully automated media server setup that runs all necessa
 
 ## Installation
 
-# 1) Download the docker-compose.yml file from the repository to your server:
+# 1) Download the `docker-compose.yml` file from the repository to your server:
         curl -O https://raw.githubusercontent.com/your-username/media-server-docker/main/docker-compose.yml
 
 # 2) Open the docker-compose.yml file with a text editor and update the necessary configuration settings for your setup:
@@ -34,7 +34,7 @@ This project provides a fully automated media server setup that runs all necessa
 
 ## Usage
 
-- **Start the Media Server**: After running the `setup.sh` file, all services will start automatically.
+- **Start the Media Server**: After running the `docker-compose.yaml` file, all services will start automatically.
 - **Access the Services**:
   - **Plex**: `http://localhost:32400/web`
   - **qBittorrent**: `http://localhost:8085`

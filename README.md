@@ -25,7 +25,7 @@ This project provides a fully automated media server setup that runs all necessa
         
 - Edit the docker-compose.yml file to set up the required configurations for each service. Here are some key configurations:
         - VPN Settings: Update the Gluetun environment variables such as VPN_PROVIDER, VPN_USER, VPN_PASSWORD, and VPN_COUNTRY.
-          - For more information about all their service providers and ways to use gluetun refer to: https://github.com/qdm12/gluetun
+                - For more information about all their service providers and ways to use gluetun refer to: https://github.com/qdm12/gluetun
         - Service Settings: Customize the settings for Plex, qBittorrent, Sonarr, Radarr, Overseerr, and Prowlarr as needed.
         - Update paths to where you will download the media and where you will save it.
 

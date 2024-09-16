@@ -1,20 +1,4 @@
 services:
-  plex:
-    image: lscr.io/linuxserver/plex:latest
-    container_name: plex
-    network_mode: host
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      - VERSION=docker
-     # - PLEX_CLAIM= #optional
-    volumes:
-      - /home/media/docker/mediaServer/plex:/config
-      - /path/to/mnt/folder/tv:/tv
-      - /path/to/mnt/folder/movies:/movies
-    restart: unless-stopped
-
   gluetun: # See glutune's github page for more VPN service options: https://github.com/qdm12/gluetun
     image: qmcgaw/gluetun
     container_name: gluetun
@@ -36,6 +20,22 @@ services:
       - OPENVPN_USER= # Your Mullvad account ID
       - SERVER_COUNTRIES: # Country for VPN (comma separated)
       - SERVER_CITIES= # City for VPN (comma separated)
+    restart: unless-stopped
+    
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - VERSION=docker
+     # - PLEX_CLAIM= #optional
+    volumes:
+      - /home/media/docker/mediaServer/plex:/config
+      - /path/to/mnt/folder/tv:/tv
+      - /path/to/mnt/folder/movies:/movies
     restart: unless-stopped
 
   qbittorrent:

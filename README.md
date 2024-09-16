@@ -5,7 +5,7 @@ This project provides a fully automated media server setup that runs all necessa
 ## Features
 
 - **Easy Setup**: Run a single setup file to start all services.
-- **VPN Integration**: All services are routed through a secure VPN connection provided by Gluetun.
+- **VPN/Proxy Integration**: All services are routed through a secure VPN connection provided by Gluetun and indexes can go through flaresolverr for cloudflare by pass.
 - **Media Management**: Includes popular tools like Plex for media streaming, qBittorrent for downloading, and Sonarr, Radarr, Overseerr, and Prowlarr for managing and organizing your media library.
 - **Dockerized Services**: All components run as Docker containers, making it easy to deploy, manage, and update.
 

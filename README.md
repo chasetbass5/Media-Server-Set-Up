@@ -23,14 +23,14 @@ This project provides a fully automated media server setup that runs all necessa
 # 2) Open the docker-compose.yml file with a text editor and update the necessary configuration settings for your setup:
         nano docker-compose.yml
 
-- VPN Settings: Update the Gluetun environment variables such as VPN_PROVIDER, VPN_USER, VPN_PASSWORD, and VPN_COUNTRY.
-- For more information about all their service providers and ways to use gluetun refer to: https://github.com/qdm12/gluetun
+- VPN Settings: Update the Gluetun environment variables such as VPN_PROVIDER, VPN_USER, VPN_PASSWORD, and VPN_COUNTRY. (Go to https://github.com/qdm12/gluetun for more information about gluetun)
 - Service Settings: Customize the settings for Plex, qBittorrent, Sonarr, Radarr, Overseerr, and Prowlarr as needed.
-- Update paths to where you will download the media and where you will save it.
+- Update paths to where you will download and store media.
 
 
 # 3) Start the services using Docker Compose:
-        docker-compose up -d
+        docker-compose up -d --build
+- Make sure to run this command in the same directory as the `docker-compose.yaml` file
 
 ## Usage
 

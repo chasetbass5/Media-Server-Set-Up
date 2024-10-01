@@ -29,7 +29,7 @@ This project provides a fully automated media server setup that runs all necessa
 
 
 # 3) Start the services using Docker Compose:
-        docker-compose up -d --build
+        docker compose up -d --build
 - Make sure to run this command in the same directory as the `docker-compose.yaml` file
 
 ## Usage

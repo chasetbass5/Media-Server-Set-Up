@@ -18,7 +18,7 @@ This project provides a fully automated media server setup that runs all necessa
 ## Installation
 
 # 1) Download the `docker-compose.yml` file from the repository to your server:
-        curl -O https://raw.githubusercontent.com/your-username/media-server-docker/main/docker-compose.yml
+        curl -O https://raw.githubusercontent.com/p3nguln5/media-server-docker/main/docker-compose.yaml
 
 # 2) Open the docker-compose.yml file with a text editor and update the necessary configuration settings for your setup:
         nano docker-compose.yml
